@@ -31,10 +31,8 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.10</version>
 				<configuration>
-
 					<userName>${userName}</userName>
 					<password>${password}</password>
-
 					<!-- git push時のコミットコメント -->
 					<message>Maven artifacts for ${project.version}</message>
 
