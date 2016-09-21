@@ -7,7 +7,7 @@ env:
   global:
     secure: "ZeiMibHxwYj1iPXsG1yNika74RA2MrRWRe3+7ZJr+KIoLWpdYtyJGN8psOtA+zAGQi6lqXN+MHCeUJnSMnrZ0zNSgbke2P4QfIuwb9T63KX8mQgeSP4tAWCTTk/PWHw2dOEJCMZOxsrnPEVmPSNPAi9hIsQjjXWHiLnEyvtxwbN43jTtne5bSof21WDwsI6KKcxQl+++7rHXoBYFS5jQR6pXvdr0u65BLDU5tlR9fz4FCC+oc2FvVbLTChc9NU0FcAVd3PKX7XDDAFa5wdvUwVYPisALxdgV+ed3Xien/+1Iw8rsME4c8Kia9eQgZcxTreekGFkol/QyhWTaLBrVwkPVDOzekW+BGoWATZVukZfoMImEIDjtMOSbjlO5A/ZY/UgVRmZfPMWnyoWRacMC+CBiTxy3+HbBeSkrEn5JilUJkx9SB6A70sWEU26uC4uYIVhrN2eu1qmnf7R1vqXZUnS3smUG0YDLBShFcfRQEBYEQZc7UT+5vov5qYtBioOEfdB2btZhTIgL5dIja2REXzpoln3d4BpeRDug33OoGRE9aC6M3j1NHHdjF2XGTg/PANWIdluZ70DEAMliwsDDCxfgZCB6XtqXYjsdI6e5CQuDWQ9rHWafk+2OMP3sRJjYbX044zeFTwO/dqTGO4SzIf9ljslLDJxLdOirogYWQZY="
 script:
-  - mvn deploy -Dpassword=$pass -DuserName=$user
+  - mvn deploy -Dpassword=$pass -DuserName=$user -X
 after_script:
 after_success:
 after_failure:
