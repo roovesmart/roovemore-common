@@ -41,8 +41,8 @@
 						<configuration>
 						    <!--
 							<packaging>jar</packaging>
-							<generatePom>true</generatePom>
 							 -->
+							<generatePom>false</generatePom>
 							<url>file://${project.build.directory}/mvn-repo</url>
 
 							<artifactId>${project.artifactId}</artifactId>
