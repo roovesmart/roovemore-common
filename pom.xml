@@ -45,7 +45,7 @@
 							<artifactId>${project.artifactId}</artifactId>
 							<groupId>${project.groupId}</groupId>
 							<version>${project.version}</version>
-							<file>${project.build.directory}/${project.artifactId}-${project.version}.jar</file>
+							<file>${project.build.directory}/mvn-repo/${project.artifactId}-${project.version}.jar</file>
 						</configuration>
 					</execution>
 				</executions>
