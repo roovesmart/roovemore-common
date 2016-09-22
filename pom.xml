@@ -33,6 +33,7 @@
 				<configuration>
 					<userName>${userName}</userName>
 					<password>${password}</password>
+
 					<!-- git push時のコミットコメント -->
 					<message>Maven artifacts for ${project.version}</message>
 
