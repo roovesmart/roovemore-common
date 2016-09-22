@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<!-- Create a artifacts to local maven repository -->
+	<!-- Create a artifacts to local maven repository
 	<distributionManagement>
 		<repository>
 			<id>internal.repos</id>
@@ -22,7 +22,7 @@
 			<url>file://${project.build.directory}/mvn-repo</url>
 		</repository>
 	</distributionManagement>
-
+-->
 	<!-- Upload from local maven repository to github -->
 	<build>
 		<plugins>
@@ -41,13 +41,16 @@
 						<configuration>
 						    <!--
 							<packaging>jar</packaging>
-							 -->
 							<generatePom>true</generatePom>
-							<url>${project.distributionManagement.repository.url}</url>
+							 -->
+							<url>file://${project.build.directory}/mvn-repo</url>
+
 							<artifactId>${project.artifactId}</artifactId>
 							<groupId>${project.groupId}</groupId>
 							<version>${project.version}</version>
+							<!--
 							<uniqueVersion>false</uniqueVersion>
+							 -->
 							<file>./pom.xml</file>
 						</configuration>
 					</execution>
