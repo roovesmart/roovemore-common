@@ -39,13 +39,15 @@
 							<goal>deploy-file</goal>
 						</goals>
 						<configuration>
+						    <!--
 							<packaging>jar</packaging>
+							 -->
 							<generatePom>true</generatePom>
 							<url>${project.distributionManagement.repository.url}</url>
 							<artifactId>${project.artifactId}</artifactId>
 							<groupId>${project.groupId}</groupId>
 							<version>${project.version}</version>
-							<file>${project.distributionManagement.repository.url}/${project.artifactId}-${project.version}.jar</file>
+							<file>./${project.artifactId}-${project.version}.pom</file>
 						</configuration>
 					</execution>
 				</executions>
