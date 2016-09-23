@@ -80,7 +80,7 @@
 					<includes><include>**/*</include></includes>
 					<!-- 最終的に他プロジェクトでdependencyする際は repositoryName、repositoryOwnerを組立URLとしている？-->
 					<repositoryName>${project.artifactId}</repositoryName>
-					<repositoryOwner>${github.site.userName}</repositoryOwner>
+					<repositoryOwner>roovesmart</repositoryOwner>
 				</configuration>
 				<executions>
 					<execution>
