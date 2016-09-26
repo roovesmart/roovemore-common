@@ -10,5 +10,6 @@ script:
   - mvn deploy -X
 after_script:
 after_success:
+
 after_failure:
 
