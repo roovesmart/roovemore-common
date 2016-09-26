@@ -12,6 +12,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<github.global.oauth2Token>${env.GH_TOKEN}</github.global.oauth2Token>
+		<github.global.password>${env.GH_TOKEN}</github.global.password>
+		<github.global.userName>${env.GITHUB_OAUTH_TOKEN}</github.global.userName>
 	</properties>
 
 	<!-- Create a artifacts to local maven repository -->
