@@ -6,8 +6,8 @@ env:
   global:
     secure: "PQbtB64bM1XtAZaQzVTafrKKghAkZYiY+DgUX/Padd8YRXlcEeD0LeMFCGMdHM+Bw7bSvKbcAPPtmdYdueLbGy6/7pEFVZN2DgHp4lV4iR9qog6jKcDdWZCj0o0kHsLfIkQoYZtmkn11LikdQjpg9ww1LouPAkia4GyK8zsU80IsdbpW6Hasl1orgZuqQCIcnhZkHJhy5aovtIrDU5sX29Bx2QpSD1ytQQPYRDJGxnhfCq8UYD68ydIUp5YMnskFp3pITmDXcQJ9Dl5UXDvmZHM3uIWA71rNwakWQYt3ybRbzBlpWuboDuO9fF2hon9Mde5vgebjLHa59ILgWnwqMKnAP8M1OocmucreqO4JIOgxZ/Hx2QghYPdq6gnkUDh6Mrjs+yY4v8iQgeueUb1ykPQmP8pwGRrkU9a09BCHvB0HRjuVhE7JSyGR8/B/4Hi0Xc7EG70qLFas++NdkYdUgawRyafA99HOrETwVmgL8iZmMdkJO0HvlwPviJmpx1oEch8bW4Qy+ilIxMJqR5myLmm3mRZ4H0MTfVikOagoG1cOZ3C+TpJ2J+j5aKPewlCdZtIKlek01D3vLf12mZC6j9lyDzuv4QVr6UuQGoZdP8g6WEGjRgqqOehEEIqPWbhFMXwqfT9SuWWSgSbLZEyMBVlhl646TGqeSjr9t2JgM6I="
 before_script:
-  - github.site.password=$GH_TOKEN
-  - github.site.userName=$GIT_NAME
+  - github\.site\.password=$GH_TOKEN
+  - github\.site\.userName=$GIT_NAME
 script:
   - mvn deploy -X
 after_script:
