@@ -10,9 +10,14 @@ env:
   global:
     secure: "TWwNZ1hJ2yEPkeVEgdmgbyOIMn63gZY4Jq3Ijs8UgIjOMQgbuur52T1bNGyCciTr5WGKp1F9O2sh7f1s4Pqsso8R/HZFUD6OcMxynRxY19qqor2MpV9TJu/uCKC1pLG77WajkqSCPRQbD/93KbP6ITk2kh1Ha9kFNAgAQw2d8cHvE1yajMznR8l+nhDoXgKU3V6pLZx+Sfq4lEs/HiQm+FfxpiWb6LOUTEHqL2k/uVjqh1yBXSoUPSlwLxJxCvzWo8ij7yTAPiSOIw68jKESA4ltgGylWctVTyakcYc1nuS9iMSjBH23Zx1qynx2wbSPJ5CVIwCZxMm1MFle6zFVOwK3pn6e7lzHKxZg5pip2RBIc/Aklf+KLrIuz4ukBhEYurBoYZOIidtJVLNp18eHMWBFPxo8wf+x0BYSuw0vzWKHUidBqYEJ62cR4hY6uBAWwfFVFj8Mzae4QPI8yed9nYm1+OVayawHCxsKWe0XJRxRMpRBaJ7VcgUnLVZmSA83lThCs6tuOewVa422X7kc4XmkwTg+APLtLO2rcAUlGEwk0c57uzqZDmyTEL7qwU0e27uE5dkwCZgmCcD4Y/6KvjhWEZRf4EWYYCr6TPenOhFP0a9RA+pSmYUPBnre44UaL73KAPlKFXukctvHR8xanErOPmdqrnrjAtt4f8nM/IM="
 before_script:
+  - echo before_script
+  - git status
 script:
-  - mvn deploy
+#  - mvn deploy
 after_script:
+  - git status
+  - git checkout mvn-repo
+  - git status
 after_success:
 after_failure:
 
