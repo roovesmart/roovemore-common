@@ -20,6 +20,7 @@ after_script:
   - ls .git/refs/heads
   - cat .git/HEAD
   - git status
+  - git branch -a
   - git checkout master
   - git status
   - git pull
