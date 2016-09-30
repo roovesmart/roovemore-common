@@ -24,7 +24,7 @@ after_script:
   - git status
   - git fetch origin mvn-repo
   - git status
-  - git checkout mvn-repo
+  - git checkout -b mvn-repo origin/mvn-repo
   - git status
 after_success:
 after_failure:
