@@ -15,6 +15,12 @@ before_script:
 script:
 #  - mvn deploy
 after_script:
+  - pwd
+  - ls
+  - ls .git/refs/heads
+  - cat .git/HEAD
+  - git status
+  - git checkout master
   - git status
   - git checkout mvn-repo
   - git status
