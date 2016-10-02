@@ -21,6 +21,7 @@ after_script:
   - cat .git/HEAD
   - git status
   - git fetch
+  - git fetch origin mvn-repo:mvn-repo
   - git branch -a
   - git checkout master
   - git status
