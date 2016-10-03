@@ -69,7 +69,7 @@
 
 					<!-- git push時のコミットコメント -->
 					<!-- コメントci skipはtravis ciの仕様で、このコメントがあるとciをスキップしてくれる -->
-					<message>Auto push from Maven artifacts for ${project.version} ci skip</message>
+					<message>Auto push maven artifacts for ${project.version} ci skip</message>
 
 					<noJekyll>true</noJekyll>
 					<!-- 事前に成果物をデプロイした場所から吸い上げ、github側に反映するイメージ -->
