@@ -17,8 +17,6 @@ script:
 after_script:
   - pwd
   - ls
-  - ls .git/refs/heads
-  - cat .git/HEAD
   - git status
   - git fetch
   - git fetch origin mvn-repo:mvn-repo
@@ -28,7 +26,6 @@ after_script:
   - git status
   - git branch -a
   - git checkout mvn-repo
-  - git checkout -b mvn-repo origin/mvn-repo
   - git status
 after_success:
 after_failure:
