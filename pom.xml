@@ -12,9 +12,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!--
 		<github.global.oauth2Token>${env.GH_TOKEN}</github.global.oauth2Token>
+		 -->
 		<github.global.password>${env.GH_TOKEN}</github.global.password>
-		<github.global.userName>${env.GITHUB_OAUTH_TOKEN}</github.global.userName>
+		<github.global.userName>${env.GIT_NAME}</github.global.userName>
 	</properties>
 
 	<!-- Create a artifacts to local maven repository -->
@@ -29,38 +31,6 @@
 	<!-- Upload from local maven repository to github -->
 	<build>
 		<plugins>
-
-<!--
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy-file</goal>
-						</goals>
-						<configuration>
-
- -->
-						    <!--
-							<packaging>jar</packaging>
-							<generatePom>false</generatePom>
-							<url>file://${project.build.directory}/mvn-repo</url>
-
-							<artifactId>${project.artifactId}</artifactId>
-							<groupId>${project.groupId}</groupId>
-							<version>${project.version}</version>
-							<uniqueVersion>true</uniqueVersion>
-							<file>./pom.xml</file>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-							 -->
-
-
 			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
@@ -68,7 +38,7 @@
 				<configuration>
 
 					<!-- git push時のコミットコメント -->
-					<!-- コメントci skipはtravis ciの仕様で、このコメントがあるとciをスキップしてくれる -->
+					<!-- コメントci skipはtravis ciの仕様で、このコメントがあるとciをスキップしてくれる。はずらしいが実際はしてくれないっぽい… -->
 					<message>Auto push maven artifacts for ${project.version} ci skip</message>
 
 					<noJekyll>true</noJekyll>
@@ -80,7 +50,7 @@
 					<includes><include>**/*</include></includes>
 					<!-- 最終的に他プロジェクトでdependencyする際は repositoryName、repositoryOwnerを組立URLとしている？-->
 					<repositoryName>${project.artifactId}</repositoryName>
-					<repositoryOwner>roovesmart</repositoryOwner>
+					<repositoryOwner>${env.GIT_NAME}</repositoryOwner>
 				</configuration>
 				<executions>
 					<execution>
