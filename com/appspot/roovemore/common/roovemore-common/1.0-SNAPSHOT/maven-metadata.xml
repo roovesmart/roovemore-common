@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.appspot.roovemore.common</groupId>
+  <artifactId>roovemore-common</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20161019.115705</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20161019115705</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20161019.115705-1</value>
+        <updated>20161019115705</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
