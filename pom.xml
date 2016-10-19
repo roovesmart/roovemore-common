@@ -22,12 +22,13 @@
 		</repository>
 	</distributionManagement>
 
-	<repositories>
-		<repository>
+
+	<pluginRepositories>
+		<pluginRepository>
 			<id>github-maven</id>
 			<url>https://raw.github.com/roovesmart/github-maven-plugin/mvn-repo</url>
-		</repository>
-	</repositories>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<build>
 		<plugins>
