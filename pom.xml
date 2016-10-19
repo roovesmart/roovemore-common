@@ -27,7 +27,7 @@
 			<plugin>
 				<groupId>com.appspot.roovemore.plugins</groupId>
 				<artifactId>github-maven-plugin</artifactId>
-				<version>1.0-SNAPSHOT</version>
+				<version>1.0</version>
 				<configuration>
 					<repositoryName>${project.artifactId}</repositoryName>
 					<repositoryOwner>${env.GIT_NAME}</repositoryOwner>
@@ -43,5 +43,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>github-maven</id>
+			<url>https://raw.github.com/roovesmart/github-maven-plugin/mvn-repo</url>
+		</repository>
+	</repositories>
+
+
 
 </project>
